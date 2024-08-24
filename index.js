@@ -50,6 +50,7 @@ function checkfields(){
     let currentTime=new Date(dateval)
     currentTime.setHours(currentTime.getHours()+timeval.split(':').map(e=>Number(e))[0])
     currentTime.setMinutes(currentTime.getMinutes()+timeval.split(':').map(e=>Number(e))[1])
+    
     if (time.value==='' || date.value===''){
         alert('Please Chose the values')
     }
@@ -74,11 +75,25 @@ function checkfields(){
                 timeZone:'Asia/Karachi'})} pkt on ${currenttime2.toLocaleDateString()}`
             
         }
+        resetfinaldata()
     }
+    
+    }
+
+    function finaldatafunc(){
+        navigator.clipboard.writeText(finaldata.innerHTML);
+        copy.style.display='block';
+        finaldata.style.color='#4bb543';
+        finaldata.style.cursor='default'
+    }
+    function resetfinaldata(){
+        copy.style.display='none';
+        finaldata.style.color='#404258';
+        finaldata.style.cursor='pointer';
     }
 
 btn.addEventListener('click',checkfields)
 
 
 
-finaldata.addEventListener('click',()=>{navigator.clipboard.writeText(finaldata.innerHTML);copy.style.display='block';finaldata.style.color='#4bb543';finaldata.style.cursor='default'})
+finaldata.addEventListener('click',finaldatafunc)
