@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wartime</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <body>
     <header>
@@ -21,13 +23,18 @@
                 <h3 class="pkt"></h3>
             </div>
             <div class="date">
+                    <label ><h3>Type</h3></label>
+                    <select name="selecttype" id="selectType" required>
+                        <option value="Preparation" selected>Preparation</option>
+                        <option value="warstart">War Started</option>
+                    </select>
                
-                    <label for="time"><h3>Time</h3></label>
-                    <input type="time" name="dt" id="time" required>
+                    <label ><h3>Time Left</h3></label>
+                    <input type="text" name="dt" id="time" required placeholder="Time left...">
              
                 
-                    <label for="date"><h3>Date</h3></label>
-                    <input type="date" name="date" id="date" required>
+                    <label ><h3>Date</h3></label>
+                    <input type="text" name="date" id="date" required placeholder="Date...">
                 
                 
 
