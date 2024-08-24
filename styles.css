@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    background-color: #fefefe;
+    color:#404258;
+}
+header{
+    max-width: 40rem;
+    max-height: 80vh;
+    margin:0 auto;
+    padding:2rem;
+    padding-left: 7rem;
+    padding-bottom: 4rem;
+}
+.card{
+    max-width: 40rem;
+    max-height: 80vh;
+    margin-left: 5rem;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.3);
+    margin:0 auto;
+    padding: 1rem;
+    
+}
+.ct:nth-child(2){
+    margin-top: 1rem;
+
+}
+.ct:nth-child(1){
+    gap:3.4rem;
+
+}
+.ct{
+    display: flex;
+    justify-content:flex-start;
+    gap:3rem;
+
+}
+.date{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    row-gap: 1rem;
+    margin-top: 1rem;
+
+
+}
+
+
+input{
+    width:20rem;
+    height:2rem;
+    border-radius: 5px;
+    border-color: #ededed;
+}
+button{
+    width: 10rem;
+    height: 2rem;
+    border-radius: .5rem;
+    border-color: #24a0ed;
+    background-color: #24a0ed;
+    color:#fff;
+    margin-top: 1rem;
+    margin-left:25.4rem;
+    cursor: pointer;
+
+    
+}
+button:hover{
+    scale: 1.1;
+}
+h3{
+font-size: 1.5rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+span{
+    font-size: 1rem;
+}
+.finaldata{
+    cursor: pointer;
+}
+.finaldata:hover{
+    color:#24a0ed;
+}
