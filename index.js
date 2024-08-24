@@ -30,7 +30,7 @@ btn.addEventListener('click',checkfields)
 function checkfields(){
 const completestring=date.value+' '+time.value+':00'
 const dateval=new Date(completestring)
-if (time.value==='' && date.value===''){
+if (time.value==='' || date.value===''){
     alert('Please Chose the values')
 }
 else{
